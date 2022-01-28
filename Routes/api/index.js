@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const bookRoutes= require('./bookRoutes');
 const userRoutes= require('./userRoutes');
+const todoRoutes = require('./todoRoutes');
 
 // Every route inside of this index.js
 // already has /api prepended befor it 
@@ -9,4 +10,5 @@ const userRoutes= require('./userRoutes');
 
 router.use('/books', bookRoutes);
 router.use('/users', userRoutes);
+router.use('/todo', todoRoutes);
 module.exports= router;
