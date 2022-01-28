@@ -18,16 +18,17 @@ Todo.init(
         completed:{
             type: DataTypes.BOOLEAN,
             allowNull: false,
+            defaultValue : false,
         },
         //This column will store a reference of the 'id' of the 'user that this todo belongs to
         authorId:{
             type: DataTypes.UUID,
         //This will create the connection between todo and user
-        },
         reference:{
             model: 'User',
         //specify to sequelize which column in the User table does this data refer to
         key: 'id',    
+        },
         },
     },
 

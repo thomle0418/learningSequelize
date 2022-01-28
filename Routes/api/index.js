@@ -10,5 +10,5 @@ const todoRoutes = require('./todoRoutes');
 
 router.use('/books', bookRoutes);
 router.use('/users', userRoutes);
-router.use('/todo', todoRoutes);
+router.use('/todos', todoRoutes);
 module.exports= router;
